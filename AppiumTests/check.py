@@ -20,7 +20,7 @@ mail_x_path = '//androidx.recyclerview.widget.RecyclerView[@resource-id="email.t
 driver = newSession()
 actions = TouchAction(driver)
 
-login(driver, 'kushagra@titan.email', 'AnuragAbha@123')
+login(driver, 'kushagra@titan.email', '')
 time.sleep(5)
 
 first_mail = driver.find_element(AppiumBy.XPATH, mail_x_path)
