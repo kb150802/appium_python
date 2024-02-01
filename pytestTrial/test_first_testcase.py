@@ -25,7 +25,7 @@ def teardown_function():
 
 def getData():
     return [
-        ["kushagra@titan.email", "AbhaAnurag@123"],
+        ["kushagra@titan.email", ""],
     ]
 
 @pytest.mark.parametrize("username,password",getData())
