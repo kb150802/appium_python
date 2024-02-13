@@ -1,8 +1,10 @@
+from appium.webdriver.common.appiumby import AppiumBy
+
 class Scroller:
 
     @staticmethod
     def scrollToText(text, driver):
-        driver.find_element_by_android_uiautomator("new UiScrollable(new UiSelector().scrollable(true).instance("
+        driver.find_element(AppiumBy.ANDROID_UIAUTOMATOR, "new UiScrollable(new UiSelector().scrollable(true).instance("
                                                    "0)).scrollIntoView(new UiSelector().textContains(\"" + text + "\").instance(0))").click()
 
     @staticmethod

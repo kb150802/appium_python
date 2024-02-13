@@ -8,6 +8,7 @@ def swipe_left(element ,driver):
     driver.swipe(start_x, start_y, end_x, start_y, 400)
     return
 
+
 def swipe_right(element, driver):
     x_coordinate, y_coordinate = element.location['x'], element.location['y']
     size = element.size
